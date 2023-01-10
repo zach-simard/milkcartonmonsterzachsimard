@@ -40,10 +40,5 @@ basic.forever(function () {
     pins.servoWritePin(AnalogPin.P0, angle)
 })
 basic.forever(function () {
-    if (input.isGesture(Gesture.ThreeG)) {
-        music.playMelody("B A G A G F A C5 ", 268)
-    }
-})
-basic.forever(function () {
     pins.servoWritePin(AnalogPin.P0, input.lightLevel())
 })
